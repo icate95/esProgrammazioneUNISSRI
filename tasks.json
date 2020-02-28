@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "compile C File",
+        "type": "shell",
+        "command": "gcc -g ",
+        "args": [
+            "-g",
+            "hw.c",
+            "-o",
+            "hw.c.exe"
+        ]
+    }]
+}
