@@ -12,6 +12,9 @@ typedef struct
 } MissItalia;   // Iniziale maiuscola
 int main()
 {
+
+    MissItalia gruppo[200]; //  gruppo di 200 miss
+
     MissItalia ragazza0;
     strcpy(ragazza0.nome, "Filberta");
     ragazza0.altezza = 180;
@@ -63,7 +66,21 @@ int main()
     printf("altezza:%d Peso:%d \n", p2->altezza, p2->peso);
     printf("voto: %d %d %d \n", p2->voto[0], p2->voto[1], p2->voto[2]);
     printf("cucina [0=aiuto .. 10=professionista] = %d \n", p2->cucina);
-    // inserire qui il codice della comparazione
 
-    MissItalia gruppo[200];
+    // inserire qui il codice della comparazione
+    // scrivere il codice che mostra le differenze di punteggio fra le due concorrenti i cui dati sono stati immessi
+    printf(" C O M P A R A Z I O N E\n");
+    printf("------------****------------\n");
+    printf("Altezza:\n");
+    printf("\t%s %s:\t%d\n", p1->nome, p1->cognome, p1->altezza);
+    printf("\t%s %s:\t%d\n", p2->nome, p2->cognome, p2->altezza);
+    printf("Peso:\n");
+    printf("\t%s %s:\t%d\n", p1->nome, p1->cognome, p1->peso);
+    printf("\t%s %s:\t%d\n", p2->nome, p2->cognome, p2->peso);
+    printf("Voto:\n");
+    printf("\t%s %s:\t%d\t%d\t%d\n", p1->nome, p1->cognome, p1->voto[0], p1->voto[1], p1->voto[2]);
+    printf("\t%s %s:\t%d\t%d\t%d\n", p2->nome, p2->cognome, p2->voto[0], p2->voto[1], p2->voto[2]);
+    printf("Cucina [0=aiuto .. 10=professionista]:\n");
+    printf("\t%s %s:\t%d\n", p1->nome, p1->cognome, p1->cucina);
+    printf("\t%s %s:\t%d\n", p2->nome, p2->cognome, p2->cucina);
 }
